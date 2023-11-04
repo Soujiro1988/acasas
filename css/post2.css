@@ -7,7 +7,7 @@
 
 /* Estilo del cuerpo de la página */
 body {
-    background: var(--color-bg) url('/images/image9.jpg') center/cover no-repeat; /* Fondo de la página */
+    background: var(--color-bg) url('../images/image9.jpg') center/cover no-repeat; /* Fondo de la página */
 }
 
 /* Estilo para los títulos principales en el contenido del post */

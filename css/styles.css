@@ -109,7 +109,7 @@ footer {
 
 /* Estilo para la sección de inicio con fondo de imagen */
 #inicio {
-    background-image: url('/images/image4.jpg');
+    background-image: url('../images/image4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
