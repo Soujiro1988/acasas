@@ -1,93 +1,123 @@
-/* Estilo global para elementos como body, encabezados, párrafos, listas y elementos de lista */
+/* Estilo global */
 body, h1, h2, p, ul, li {
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado */
-    font-family: 'Arial', sans-serif; /* Establece la fuente predeterminada para estos elementos */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Estilo para el contenedor principal */
 .container {
-    max-width: 960px; /* Establece el ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor horizontalmente en la página */
-    padding: 0 15px; /* Agrega un relleno a los lados del contenedor */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Estilo para la barra de navegación */
 nav {
-    background-color: #333; /* Fondo de la barra de navegación */
-    color: #fff; /* Color de texto de la barra de navegación */
-    padding: 10px 0; /* Espaciado interno en la barra de navegación */
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+/* Estilo para la barra de navegación */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave debajo de la barra */
 }
 
 /* Estilo para el contenedor dentro de la barra de navegación */
 nav .container {
-    display: flex; /* Utiliza un modelo de caja flexible para alinear los elementos */
-    justify-content: space-between; /* Espacio entre los elementos en la barra de navegación */
-    align-items: center; /* Centra verticalmente los elementos en la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Estilo para la lista no ordenada dentro de la barra de navegación */
 nav ul {
-    list-style-type: none; /* Quita los puntos de lista */
-    display: flex; /* Utiliza un modelo de caja flexible para alinear los elementos */
+    list-style-type: none;
+    display: flex;
 }
 
 /* Estilo para los elementos de la lista en la barra de navegación */
 nav li {
-    margin-left: 15px; /* Espacio entre elementos de la lista */
+    margin-left: 20px;
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
 }
 
 /* Estilo para los enlaces en la barra de navegación */
 nav a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #fff; /* Color de texto de los enlaces */
-    transition: color 0.3s; /* Agrega una transición suave al color del texto en los enlaces */
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
 }
 
 /* Cambia el color de los enlaces al pasar el ratón sobre ellos */
 nav a:hover {
-    color: #ddd; /* Cambia el color del texto de los enlaces al pasar el ratón */
+    color: #ddd;
+}
+
+/* Estilo para el botón de navegación (si lo tienes) */
+.nav-button {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color de texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Cambia el color del botón al pasar el ratón sobre él */
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Cambia el color de los enlaces al pasar el ratón sobre ellos */
+nav a:hover {
+    color: #ddd;
 }
 
 /* Estilo para la sección de presentación */
 .presentacion {
-    background-color: #f9f9f9; /* Fondo de la sección de presentación */
-    padding: 50px 0; /* Espaciado interno superior e inferior en la sección de presentación */
-    text-align: center; /* Centra el contenido de la sección de presentación horizontalmente */
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
 }
 
 /* Estilo para la imagen dentro de la sección de presentación */
 .presentacion img {
-    max-width: 200px; /* Establece el ancho máximo de la imagen */
-    border-radius: 50%; /* Agrega un borde redondeado a la imagen */
-    margin-top: 20px; /* Espaciado superior de la imagen */
+    max-width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 /* Estilo para las secciones "acerca" y "publicaciones" */
 .acerca, .publicaciones {
-    padding: 40px 0; /* Espaciado interno superior e inferior en estas secciones */
+    padding: 40px 0;
 }
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #333; /* Fondo del pie de página */
-    color: #fff; /* Color de texto en el pie de página */
-    text-align: center; /* Centra el contenido del pie de página horizontalmente */
-    padding: 20px 0; /* Espaciado interno superior e inferior en el pie de página */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-
-/* Si quieres que solo una sección tenga imagen de fondo, por ejemplo, la sección de inicio */
+/* Estilo para la sección de inicio con fondo de imagen */
 #inicio {
     background-image: url('/images/image4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 100px 0;  /* Añade padding para asegurarte de que el contenido no queda superpuesto */
-    color: white;  /* Cambia el color del texto para que sea legible con el fondo */
+    padding: 100px 0;
+    color: white;
 }
 
-/* Si el fondo hace que el texto sea difícil de leer, puedes añadir un overlay oscuro */
+/* Overlay oscuro para la sección de inicio */
 #inicio::before {
     content: "";
     position: absolute;
@@ -95,57 +125,56 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);  /* Overlay negro con 50% de opacidad */
-    z-index: -1;  /* Asegura que el overlay queda detrás del contenido */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
-
-/* Modifica el aspecto de la sección de publicaciones */
+/* Estilo para la sección de publicaciones */
 .publicaciones {
-    background-color: #f9f9f9; /* Fondo gris claro */
-    padding: 40px 0; /* Espaciado interno superior e inferior de 40px y 0 a los lados */
-    text-align: center; /* Centra el contenido de la sección horizontalmente */
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
 }
 
 /* Estilo para el título de la sección */
 .publicaciones h2 {
-    font-size: 28px; /* Tamaño de fuente más grande */
-    color: #333; /* Color de texto oscuro */
-    margin-bottom: 20px; /* Espacio inferior de 20px */
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 /* Estilo para la lista de publicaciones */
 .publicaciones ul {
-    list-style-type: none; /* Quita los puntos de lista */
-    padding: 0; /* Elimina el espacio interior en la lista */
-    display: flex; /* Utiliza un modelo de caja flexible para alinear los elementos en una fila */
-    flex-wrap: wrap; /* Permite que los elementos de la lista se envuelvan cuando no haya suficiente espacio horizontal */
-    justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor flex */
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Estilo para cada elemento de la lista de publicaciones */
 .publicaciones li {
-    margin: 15px; /* Margen exterior de 15px en todos los lados */
-    padding: 15px; /* Espaciado interno de 15px */
-    background-color: #fff; /* Fondo blanco */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: transform 0.3s ease-in-out; /* Efecto de transición al pasar el ratón */
+    margin: 15px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Efecto de elevación al pasar el ratón sobre un elemento de la lista */
 .publicaciones li:hover {
-    transform: translateY(-5px); /* Eleva el elemento 5px hacia arriba al pasar el ratón */
+    transform: translateY(-5px);
 }
 
 /* Estilo para los enlaces de los posts */
 .publicaciones a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #333; /* Color de texto oscuro */
-    font-weight: bold; /* Texto en negrita */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
 /* Cambia el color de los enlaces al pasar el ratón sobre ellos */
 .publicaciones a:hover {
-    color: #007BFF; /* Cambia el color al azul cuando se pasa el ratón sobre los enlaces */
+    color: #007BFF;
 }

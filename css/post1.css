@@ -1,102 +1,83 @@
-/* Estilos específicos para post2.html */
-
-/* Definición de la paleta de colores personalizada usando variables CSS */
 :root {
-    --color-primario: #2c3e50; /* Color principal */
-    --color-secundario: #3498db; /* Color secundario */
-    --color-bg: #ecf0f1; /* Color de fondo */
+    --color-primario: #2c3e50;
+    --color-secundario: #3498db;
+    --color-bg: #ecf0f1;
 }
 
-/* Estilo del fondo del cuerpo de la página */
 body {
-    background-color: var(--color-bg); /* Usando el color de fondo personalizado */
+    background-color: var(--color-bg);
 }
 
-/* Estilo para los títulos principales en el contenido del post */
 .contenido-post h1 {
-    margin-bottom: 30px; /* Espaciado inferior */
-    color: var(--color-primario); /* Color de texto principal */
-    border-bottom: 2px solid var(--color-secundario); /* Línea inferior de color secundario */
-    padding-bottom: 10px; /* Espaciado inferior adicional */
+    margin-bottom: 30px;
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 10px;
 }
 
-/* Estilo para los títulos secundarios en el contenido del post */
 .contenido-post h2 {
-    margin-top: 40px; /* Espaciado superior */
-    margin-bottom: 20px; /* Espaciado inferior */
-    color: var(--color-secundario); /* Color de texto secundario */
+    margin: 40px 0 20px;
+    color: var(--color-secundario);
 }
 
-/* Estilo para los párrafos en el contenido del post */
 .contenido-post p {
-    font-size: 1.1em; /* Tamaño de fuente */
-    line-height: 1.6; /* Espaciado entre líneas */
-    margin-bottom: 20px; /* Espaciado inferior */
-    color: var(--color-primario); /* Color de texto principal */
-    background-color: #fff; /* Fondo blanco */
-    padding: 15px; /* Espaciado interior */
-    border-left: 5px solid var(--color-secundario); /* Borde izquierdo de color secundario */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutíl */
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--color-primario);
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid var(--color-secundario);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el pie de página */
 footer {
-    margin-top: 50px; /* Espaciado superior */
-    background-color: var(--color-primario); /* Fondo de color principal */
+    margin-top: 50px;
+    background-color: var(--color-primario);
 }
 
-/* Añadiendo una animación sutil al hacer hover en los enlaces en la barra de navegación y el pie de página */
 nav a:hover, footer a:hover {
-    transform: translateY(-2px); /* Efecto de elevación */
+    transform: translateY(-2px);
 }
 
-/* Espaciado adicional en la parte superior e inferior del contenido del post */
 .contenido-post {
-    padding-top: 60px; /* Espaciado superior */
-    padding-bottom: 60px; /* Espaciado inferior */
+    padding: 60px 0;
 }
-
-
-
-/* Estilos para la barra de navegación en post1.html */
 
 nav.post1-nav {
-    background-image: url('/images/image8.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil para darle profundidad */
-    transition: background .3s ease-in-out;  /* Transición suave para cambios de fondo */
+    background: url('/images/image8.jpg') center/cover no-repeat;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background .3s ease-in-out;
 }
 
 nav.post1-nav .container {
-    display: flex;  /* Flexbox para alinear los elementos */
-    justify-content: space-between;  /* Distribuye el espacio entre logo y lista */
-    align-items: center;  /* Alinea verticalmente los elementos */
-    padding: 10px 20px;  /* Padding para dar espacio en el nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 nav.post1-nav .logo {
-    color: white;  /* Color blanco para el logo */
-    font-size: 1.5em;  /* Aumenta el tamaño del logo */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* Sombra para que el texto destaque */
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav.post1-nav ul {
-    list-style-type: none;  /* Elimina los puntos de la lista */
-    padding: 0;  /* Elimina el padding predeterminado */
-    display: flex;  /* Usa Flexbox para alinear los ítems de la lista */
-    gap: 20px;  /* Espacio entre ítems de la lista */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
 nav.post1-nav li a {
-    color: white;  /* Color blanco para los enlaces */
-    text-decoration: none;  /* Elimina el subrayado */
-    padding: 5px 10px;  /* Padding alrededor de los enlaces */
-    border-radius: 5px;  /* Bordes redondeados */
-    transition: background-color .3s ease-in-out;  /* Transición suave para el hover */
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color .3s ease-in-out;
 }
 
 nav.post1-nav li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);  /* Efecto hover con fondo semitransparente */
+    background-color: rgba(255, 255, 255, 0.2);
 }
