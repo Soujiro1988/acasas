@@ -45,7 +45,8 @@ nav a:hover, footer a:hover {
 }
 
 nav.post1-nav {
-    background: url('/images/image8.jpg') center/cover no-repeat;
+    background: url('../images/image8.jpg');
+    background-color: #4a90e2; /* Color de fondo para la barra de navegación */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: background .3s ease-in-out;
 }
